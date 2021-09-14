@@ -1,0 +1,205 @@
+version: "2.0"
+
+rules:
+
+- rule: Say `hello` when the user starts a conversation with intent `greet`
+  conversation_start: true
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say about client side holiday
+  steps:
+  - intent: holiday_client
+  - action: utter_holiday_client
+
+- rule: Say about indian holiday
+  steps:
+  - intent: holiday_india
+  - action: utter_holiday_india
+
+- rule: Say if there is no holiday on client side
+  steps:
+  - intent: no_holiday_client
+  - action: utter_no_holiday_client
+
+- rule: Say how many num of holidays do india people get
+  steps:
+  - intent: numof_holiday_india
+  - action: utter_numof_holiday_india
+
+- rule: Say how many num of holidays do client side people get
+  steps:
+  - intent: numof_holiday_client
+  - action: utter_numof_holiday_client
+
+- rule: Say about floating holiday
+  steps:
+  - intent: floating_holiday
+  - action: utter_floating_holiday
+
+- rule: Say about floating holiday process
+  steps:
+  - intent: floating_holiday_process
+  - action: utter_floating_holiday_process
+
+- rule: Say about leave calendar in abzooba
+  steps:
+  - intent: leavepolicy_calendar
+  - action: utter_leavepolicy_calendar
+
+- rule: Say about privilege leave policy
+  steps:
+  - intent: leavepolicy_privilege
+  - action: utter_leavepolicy_privilege
+
+- rule: Say about casual leave policy
+  steps:
+  - intent: leavepolicy_casual
+  - action: utter_leavepolicy_casual
+
+- rule: Say about sick leave policy
+  steps:
+  - intent: leavepolicy_sick
+  - action: utter_leavepolicy_sick
+
+- rule: Say about leave policy of consultants
+  steps:
+  - intent: leavepolicy_consultants
+  - action: utter_leavepolicy_consultants
+
+- rule: Say about leave policy of associates
+  steps:
+  - intent: leavepolicy_associates
+  - action: utter_leavepolicy_associates
+
+- rule: Say how many continuous leaves can one take
+  steps:
+  - intent: leavepolicy_continuous
+  - action: utter_leavepolicy_continuous
+
+- rule: Say how many continuous casual leaves can one take
+  steps:
+  - intent: leavepolicy_continuous_casual
+  - action: utter_leavepolicy_continuous_casual
+
+- rule: Say about carry forward of leaves
+  steps:
+  - intent: leavepolicy_carry
+  - action: utter_leavepolicy_carry
+
+- rule: Say about advance leave policy
+  steps:
+  - intent: leavepolicy_advance
+  - action: utter_leavepolicy_advance
+
+- rule: Say about timesheet queries
+  steps:
+  - intent: attendance_timesheet
+  - action: utter_attendance_timesheet
+
+- rule: Say about working hour policy in abzooba
+  steps:
+  - intent: attendance_workinghours
+  - action: utter_attendance_workinghours
+
+- rule: Say queries on wrong timesheet
+  steps:
+  - intent: attendance_wrongtimesheet
+  - action: utter_attendance_wrongtimesheet
+
+- rule: Say if referrer is eligible for bonus
+  steps:
+  - intent: referral_contractor
+  - action: utter_referral_contractor
+
+- rule: Say about referral bonus
+  steps:
+  - intent: referral_bonus
+  - action: utter_referral_bonus
+
+- rule: Say about referral process
+  steps:
+  - intent: referral_process
+  - action: utter_referral_process
+
+- rule: Say about referral eligibility
+  steps:
+  - intent: referral_eligible
+  - action: utter_referral_eligible
+
+- rule: Say about leave policy in case of exit
+  steps:
+  - intent: exit_leavepolicy
+  - action: utter_exit_leavepolicy
+
+- rule: Say about LWD
+  steps:
+  - intent: exit_LWD
+  - action: utter_exit_LWD
+
+- rule: Say about PHOKT
+  steps:
+  - intent: exit_PHOKT
+  - action: utter_exit_PHOKT
+
+- rule: Say about clearance policy in case of exit
+  steps:
+  - intent: exit_clearance
+  - action: utter_exit_clearance
+
+- rule: Say about alumni network
+  steps:
+  - intent: exit_alumni
+  - action: utter_exit_alumni
+
+- rule: Say when acceptance letter will be given in case of exit
+  steps:
+  - intent: exit_res_acceptance
+  - action: utter_exit_res_acceptance
+
+- rule: Say when exp letter will be given in case of exit
+  steps:
+  - intent: exit_expletter
+  - action: utter_exit_expletter
+
+- rule: Say when the settlement will be done in case of exit
+  steps:
+  - intent: exit_settlement
+  - action: utter_exit_settlement
+
+- rule: Say about encashment of PL
+  steps:
+  - intent: exit_leave_encash
+  - action: utter_exit_leave_encash
+
+- rule: Say about insurance policy in case of exit
+  steps:
+  - intent: exit_insurance
+  - action: utter_exit_insurance
+
+- rule: Say how procedure of withdrawl of pf
+  steps:
+  - intent: exit_withdraw_pf
+  - action: utter_exit_withdraw_pf
+
+- rule: Say about gratuity
+  steps:
+  - intent: exit_gratuity
+  - action: utter_exit_gratuity
+
+- rule: Say about exit queries
+  steps:
+  - intent: exit_queries
+  - action: utter_exit_queries
+

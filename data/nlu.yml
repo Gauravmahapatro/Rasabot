@@ -1,0 +1,389 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hi,i am [gaurav](name)
+    - hello,i am [ankita]{"entity": "name"}
+    - hello,i am [yash]{"entity": "name"}
+    - hi,i am [anjali]{"entity": "name"}
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: gratuity_yes
+  examples: |
+    - More than 5yrs
+    - 6yrs
+    - 10yrs
+
+- intent: gratuity_no
+  examples: |
+    - Less than 5yrs
+    - 1yr
+    - 2yrs
+    - 3years
+    - 4years
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: options
+  examples: |
+    - How you could help me?
+    - What you can do?
+    - What help you provide?
+    - How you can be helpful?
+    - What support is offered
+
+- intent: holiday_client
+  examples: |
+    - Which holiday calendar is applicable for associates working at client site?
+    - US
+    - Texas
+    - USA
+    - Milpitas
+    - California
+    - Which holiday calendar is applicable for employees working at onsite?
+    - Which holiday calendar is applicable for associates working in US?
+    - Which vacation calendar is applicable for employees working in US?
+    - Which vacation calendar is applicable for associates working at client site?
+
+- intent: holiday_india
+  examples: |
+    - Which holiday calendar is applicable for associates working in india?
+    - Which holiday calendar is applicable for employees working in offsite?
+    - Which holiday calendar is applicable for associates working in India?
+    - India
+    - Kolkata
+    - Pune
+    - Bengaluru
+    - Hyderabad
+    - Which vacation calendar is applicable for employees working in India?
+    - Which vacation calendar is applicable for associates working in India?
+
+- intent: holiday_me
+  examples: |
+    - Which holiday calendar is applicable for me?
+    - Which vacation calendar is applicable for me?
+
+- intent: no_holiday_client
+  examples: |
+    - What do I do if Abzooba has a holiday but the client does not?
+    - What can I do if Abzooba has a holiday but the client does not?
+    - What shall I do if Abzooba has a holiday but the client does not?
+
+- intent: numof_holiday_india
+  examples: |
+    - How many holidays are available for associates in India?
+    - How many holidays are available for associates in offshore?
+    - How many holidays are available for employees in India?
+    - How many holidays are available for employees in offshore?
+
+- intent: numof_holiday_client
+  examples: |
+    - How many holidays are available for associates in US?
+    - How many holidays are available for associates at onsite?
+    - How many holidays are available for employees in US?
+    - How many holidays are available for employees at onsite?
+    - How many holidays are available for employees at client site?
+
+- intent: floating_holiday
+  examples: |
+    - How many Floating holidays are there?
+    - How many Floating holidays can associates take?
+    - How many Floating holidays are available for associates?
+    - How many Floating holidays are available for US associates?
+    - How many Floating holidays are available for Indian associates?
+    - How many Floating holidays can i take?
+    - How many Floating holidays can i avail?
+
+- intent: floating_holiday_process
+  examples: |
+    - What is the process to avail Floating Holiday?
+    - How do we avail Floating Holiday?
+    - How to avail Floating Holiday?
+    - How do we apply for Floating Holiday?
+    - How to apply for Floating Holiday?
+    - How do i avail Floating Holiday?
+    - How do i apply for Floating Holiday?
+
+- intent: leavepolicy_calendar
+  examples: |
+    - What is the leave calendar year followed in Abzooba?
+    - What is the leave calendar followed in Abzooba?
+
+- intent: leavepolicy_privilege
+  examples: |
+    - How many Privilege Leave/ PL an associates are eligible during the year?
+    - How many Privilege Leave/ PL an there?
+    - How many Privilege Leave/ PL i can take in a year?
+    - How many Privilege Leave/ PL one can take in a year?
+    - How many Privilege Leave/ PL can associates take in a year?
+
+- intent: leavepolicy_casual
+  examples: |
+    - How many Casual Leave/ CL an associates are eligible during the year?
+    - How many Casual Leave/ CL an there?
+    - How many Casual Leave/ CL i can take in a year?
+    - How many Casual Leave/ CL one can take in a year?
+    - How many Casual Leave/ CL can associates take in a year?
+
+- intent: leavepolicy_sick
+  examples: |
+    - How many Sick Leave/ SL an associates are eligible during the year?
+    - How many Sick Leave/ SL an there?
+    - How many Sick Leave/ SL i can take in a year?
+    - How many Sick Leave/ SL one can take in a year?
+    - How many Sick Leave/ SL can associates take in a year?
+
+- intent: leavepolicy_consultants
+  examples: |
+    - How many leaves are Abzooba consultants eligible for?
+    - How many leaves can Abzooba consultants take?
+    - What is the number of days Abzooba consultants can be on leave?
+    - consultant
+
+- intent: leavepolicy_associates
+  examples: |
+    - How many leaves are Abzooba associates eligible for?
+    - How many leaves can Abzooba employees take?
+    - What is the number of days Abzooba employees can be on leave?
+    - associate
+    - employee
+
+- intent: leavepolicy_me
+  examples: |
+    - How many leaves am i eligible for?
+    - How many leaves can i take?
+    - What is the number of days can i be on leave?
+
+- intent: leavepolicy_continuous
+  examples: |
+    - How many maximum number of continuous leaves is a person eligible for?
+    - How many maximum number of continuous leaves can a person take?
+    - How many maximum number of continuous leaves can i take?
+
+- intent: leavepolicy_continuous_casual
+  examples: |
+    - How many maximum number of continuous Casual Leave/ CL is a person eligible for?
+    - How many maximum number of continuous Casual Leave/ CL can a person take?
+    - How many maximum number of continuous Casual Leave/ CL can i take?
+
+- intent: leavepolicy_carry
+  examples: |
+    - How many Privilege leave balance for the year 2020 can be carried forward to the next year?
+    - How many Privilege leave balance for 2020 can be carried forward to 2021?
+    - Till when can the leave balance be carried forward?
+
+- intent: leavepolicy_advance
+  examples: |
+    - Is advance leave applicable?
+    - When can we take advance leave?
+    - Who can take advance leave?
+    - When can associates be eligible for advance leave?
+    - Who is be eligible for advance leave?
+    - Am I eligible for advance leave?
+
+- intent: exit_leavepolicy
+  examples: |
+    - Whether resigned associate is eligible to avail leaves during the notice period?
+    - Are resigned associates eligible to avail leaves during the notice period?
+    - Is resigned associate eligible to avail leaves during the notice period?
+    - Am I eligible to avail leaves during the notice period?
+
+- intent: exit_LWD
+  examples: |
+    - When Resigned associate will get formal notification on his / her LWD?
+    - When will I get formal notification on his / her LWD?
+
+- intent: exit_PHOKT
+  examples: |
+    - By when resigned associate should complete project hand over / knowledge transfer?
+    - By When should I complete project hand over / knowledge transfer?
+
+- intent: exit_clearance
+  examples: |
+    - What is Abzooba's Clearance Checklist?
+    - Tell me something about Abzooba's Clearance Checklist?
+    - What should i keep in mind about Abzooba's Clearance Checklist?
+
+- intent: exit_alumni
+  examples: |
+    - How to get added to Abzooba Alumni network?
+    - How do I get added to Abzooba Alumni network?
+    - What is the process to get added to Abzooba Alumni network?
+
+- intent: exit_res_acceptance
+  examples: |
+    - When resigned associate will get resignation acceptance letter?
+    - By When resigned associate will get resignation acceptance letter?
+
+- intent: exit_expletter
+  examples: |
+    - When resigned associate will get relieving letter and experience letter?
+    - By When resigned associate will get relieving letter and experience letter?
+
+- intent: exit_settlement
+  examples: |
+    - When resigned associate's Full and Final Settlement will be done?
+    - By When should an associate expect Full and Final Settlement will be done?
+
+- intent: exit_leave_encash
+  examples: |
+    - What is procedure of leave encashment in case of Exit?
+    - What is process of leave encashment in case of Exit?
+    - How do i encash my leaves in case of Exit?
+
+- intent: exit_insurance
+  examples: |
+    - What is generic guidelines in case parental / in laws insurance post Exit?
+    - What are guidelines for parental / in laws insurance post Exit?
+
+- intent: exit_withdraw_pf
+  examples: |
+    - What is procedure of withdrawal of Provident Fund?
+    - What is process of withdrawal of PF?
+    - How do I withdraw my PF?
+
+- intent: exit_gratuity
+  examples: |
+    - Who is applicable for Gratuity payment from Abzooba?
+
+- intent: exit_gratuity_me
+  examples: |
+    - Am I eligible for Gratuity payment from Abzooba?
+    - Am I eligible for Gratuity payment from Abzooba?
+
+- intent: exit_queries
+  examples: |
+    - To whom associate should connect for post exit queries?
+    - Whom should I connect for post exit queries?
+
+- intent: attendance_timesheet
+  examples: |
+    - How do I fill in my Abzooba timesheets?
+    - Who should i contact to fill in my client timesheet?
+    - How do I fill in my client timesheet?
+    - Where do I fill in my client timesheet?
+    - Whom should I contact to fill my Abzooba timesheet?
+    - Where do I fill in my Abzooba timesheets?
+
+- intent: attendance_workinghours
+  examples: |
+    - What is Abzooba's standard working hours?
+    - What is standard working hours of Abzooba?
+    - What is Abzooba's working hours?
+
+- intent: attendance_wrongtimesheet
+  examples: |
+    - I input the wrong hours and submitted my timesheet.How do I correct it?
+    - How do I correct the timesheet as i input wrong working hours?
+    - How to correct the timesheet with wrong working hours?
+    - How to correct the wrong timesheet?
+
+- intent: referral_contractor
+  examples: |
+    - I am a contractor and referred someone who was hired.Am I eligible for a referral bonus?
+    - I made a referral being a contractor.Am I eligible for a referral bonus?
+    - I made a referral being a contractor.Will I be eligible for a referral bonus?
+
+- intent: referral_bonus
+  examples: |
+    - How long after my referral joins the company will I get the bonus?
+    - When will i get the referral bonus?
+    - After how many days will I get the referral bonus?
+
+- intent: referral_process
+  examples: |
+    - How associate should send referral to recruitment team?
+    - How an employee should send referral to recruitment team?
+    - How should I send referral to recruitment team?
+
+- intent: referral_eligible
+  examples: |
+    - Who is eligible for referral bonus?
+    - Am I eligible for referral bonus?
+
+

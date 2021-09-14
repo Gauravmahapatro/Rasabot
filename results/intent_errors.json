@@ -1,0 +1,82 @@
+[
+  {
+    "text": "good afternoon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5886872410774231
+    }
+  },
+  {
+    "text": "US",
+    "intent": "holiday_client",
+    "intent_prediction": {
+      "name": "numof_holiday_client",
+      "confidence": 0.4933319687843323
+    }
+  },
+  {
+    "text": "Texas",
+    "intent": "holiday_client",
+    "intent_prediction": {
+      "name": "numof_holiday_client",
+      "confidence": 0.5201417803764343
+    }
+  },
+  {
+    "text": "Kolkata",
+    "intent": "holiday_india",
+    "intent_prediction": {
+      "name": "numof_holiday_india",
+      "confidence": 0.5549404621124268
+    }
+  },
+  {
+    "text": "Pune",
+    "intent": "holiday_india",
+    "intent_prediction": {
+      "name": "numof_holiday_india",
+      "confidence": 0.6242239475250244
+    }
+  },
+  {
+    "text": "Bengaluru",
+    "intent": "holiday_india",
+    "intent_prediction": {
+      "name": "numof_holiday_india",
+      "confidence": 0.733475387096405
+    }
+  },
+  {
+    "text": "Hyderabad",
+    "intent": "holiday_india",
+    "intent_prediction": {
+      "name": "numof_holiday_india",
+      "confidence": 0.49694979190826416
+    }
+  },
+  {
+    "text": "India",
+    "intent": "numof_holiday_india",
+    "intent_prediction": {
+      "name": "holiday_india",
+      "confidence": 0.4942600131034851
+    }
+  },
+  {
+    "text": "Milpitas",
+    "intent": "numof_holiday_client",
+    "intent_prediction": {
+      "name": "holiday_client",
+      "confidence": 0.5388789772987366
+    }
+  },
+  {
+    "text": "California",
+    "intent": "numof_holiday_client",
+    "intent_prediction": {
+      "name": "holiday_client",
+      "confidence": 0.5352463126182556
+    }
+  }
+]

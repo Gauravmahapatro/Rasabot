@@ -1,0 +1,94 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_nohelp
+
+- story: option path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: options
+  - action: utter_options
+
+- story: holiday path india
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: holiday_me
+  - action: utter_holiday_me
+  - intent: holiday_india
+  - action: utter_holiday_india
+
+- story: holiday path usa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: holiday_me
+  - action: utter_holiday_me
+  - intent: holiday_client
+  - action: utter_holiday_client
+
+- story: leave policy associate
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: leavepolicy_me
+  - action: utter_leavepolicy_me
+  - intent: leavepolicy_associates
+  - action: utter_leavepolicy_associates
+
+- story: leave policy consultant
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: leavepolicy_me
+  - action: utter_leavepolicy_me
+  - intent: leavepolicy_consultants
+  - action: utter_leavepolicy_consultants
+
+- story: gratuity payment affirm
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: exit_gratuity_me
+  - action: utter_exit_gratuity_me
+  - intent: gratuity_yes
+  - action: utter_yesgratuity
+
+- story: gratuity payment deny
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: exit_gratuity_me
+  - action: utter_exit_gratuity_me
+  - intent: gratuity_no
+  - action: utter_nogratuity
+
+
+
